@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.10 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.40 FATAL_ERROR )
 
 set( CINDER_PLATFORM "Cocoa" )
 
@@ -162,4 +162,6 @@ list( APPEND CINDER_SKIP_SAMPLES
 	_opengl/ParticleSphereCS
 	_opengl/NVidiaComputeParticles
 )
+
+string(APPEND CMAKE_C_FLAGS " -D_LARGEFILE64_SOURCE=1")
 
