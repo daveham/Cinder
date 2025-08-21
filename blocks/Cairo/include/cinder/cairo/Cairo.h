@@ -22,6 +22,8 @@
 
 #pragma once
 
+#include <Cairo.h>
+
 #include "cinder/Cinder.h"
 #include "cinder/Surface.h"
 #include "cinder/Color.h"
@@ -48,6 +50,7 @@
 struct _cairo_surface;
 typedef struct _cairo_surface cairo_surface_t;
 
+/*
 struct _cairo;
 typedef struct _cairo cairo_t;
 
@@ -56,6 +59,7 @@ typedef struct cairo_path cairo_path_t;
 
 struct _cairo_pattern;
 typedef struct _cairo_pattern cairo_pattern_t;
+*/
 
 /*
 struct _cairo_rectangle;
@@ -65,6 +69,7 @@ struct _cairo_rectangle_list;
 typedef struct _cairo_rectangle_list cairo_rectangle_list_t;
 */
 
+/*
 struct _cairo_font_options;
 typedef struct _cairo_font_options cairo_font_options_t;
 
@@ -76,15 +81,18 @@ typedef struct _cairo_font_face cairo_font_face_t;
 
 struct _cairo_scaled_font;
 typedef struct _cairo_scaled_font cairo_scaled_font_t;
+*/
 
 /*struct _cairo_glyph;
 typedef struct _cairo_glyph cairo_glyph_t;*/
 
+/*
 struct _cairo_text_extents;
 typedef struct _cairo_text_extents cairo_text_extents_t;
 
 struct _cairo_font_extents;
 typedef struct _cairo_font_extents cairo_font_extents_t;
+*/
 
 namespace cinder { namespace cairo {
 /////////////////////////////////////////////////////////////////////////////

@@ -104,6 +104,7 @@ find_library( COREVIDEO_FRAMEWORK CoreVideo REQUIRED )
 find_library( ACCELERATE_FRAMEWORK Accelerate REQUIRED )
 find_library( IOSURFACE_FRAMEWORK IOSurface REQUIRED )
 find_library( IOKIT_FRAMEWORK IOKit REQUIRED )
+find_library( CAIRO_FRAMEWORK Cairo REQUIRED )
 
 # Option for using GStreamer under OS X.
 if( CINDER_MAC AND NOT CINDER_DISABLE_VIDEO )
@@ -134,6 +135,7 @@ list( APPEND CINDER_LIBS_DEPENDS
     ${ACCELERATE_FRAMEWORK}
     ${IOSURFACE_FRAMEWORK}
     ${IOKIT_FRAMEWORK}
+	${CAIRO_FRAMEWORK}
 )
 
 source_group( "cinder\\cocoa"           FILES ${SRC_SET_COCOA} )
